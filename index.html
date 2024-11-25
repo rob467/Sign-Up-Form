@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div class="hero-container">
+        <div class="background-container">
+            <div class="logo-container">
+                <img src="odin-lined.png">
+                <span>ODIN</span>
+            </div>
+            <p class="background-credit">Photo by <a href="https://unsplash.com/@martin_masson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Martin Masson</a> on Unsplash
+            </p>
+        </div>
+        <div class="form-container">
+            <p>This is a mock sign up form. Sign up <em>now</em> to not get the experience of a lifetime.
+                 When you click submit, your life will not change at all!</p>
+            <form action="" method="get" class="signup-form">
+                <div class="inputs-container">
+                    <h3>Fill out below!</h3>
+                    <div class="form-row">
+                        <label for="first-name">First Name
+                            <input type="text"
+                            id="first-name"
+                            name="first-name"
+                            pattern="^([^\d]*)$"></label>
+                        <label for="last-name">Last Name
+                            <input type="text"
+                            id="last-name"
+                            name="last-name"
+                            pattern="^([^\d]*)$">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email
+                            <input type="email" id="email" name="email"
+                            placeholder="joe@example.com">
+                        </label>
+                        <label for="phone-number">Phone Number
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password
+                            <input type="password" id="password" name="password">
+                        </label>
+                        <label for="confirm-password">Confirm Password
+                            <input type="password" id="confirm-password" name="confirm-password">
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
